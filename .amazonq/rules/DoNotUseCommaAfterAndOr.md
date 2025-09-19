@@ -1,1 +1,0 @@
-Do not use comma(,) after using "and" "or" in a sentence.
