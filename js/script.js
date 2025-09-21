@@ -1,5 +1,5 @@
 // Typing animation
-const texts = ['Software Engineering Student', 'Problem Solver', 'Future Developer', 'Tech Enthusiast', 'Creative Thinker'];
+const texts = ['Software Engineering Student', 'Problem Solver', 'ML Enthusiast', 'Tech Enthusiast', 'AI Researcher'];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -116,7 +116,6 @@ window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         if (scrollY >= (sectionTop - 200)) {
             current = section.getAttribute('id');
         }

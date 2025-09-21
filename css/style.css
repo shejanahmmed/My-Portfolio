@@ -273,6 +273,92 @@ body {
     transition: width 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Space-themed Skills Section Styles */
+.skill-item {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateX(8px);
+}
+
+.skill-item:hover span:first-child {
+    color: #ffffff;
+}
+
+/* Animated stars for space theme */
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+.animate-pulse {
+    animation: twinkle 3s ease-in-out infinite;
+}
+
+/* Skill badge hover effects */
+.skill-item span:last-child {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-item span:last-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.skill-item:hover span:last-child::before {
+    left: 100%;
+}
+
+/* Card glow effects */
+.group:hover {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.15);
+}
+
+.group:hover.fade-in:nth-child(1) {
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.15);
+}
+
+.group:hover.fade-in:nth-child(2) {
+    box-shadow: 0 0 30px rgba(147, 51, 234, 0.15);
+}
+
+.group:hover.fade-in:nth-child(3) {
+    box-shadow: 0 0 30px rgba(249, 115, 22, 0.15);
+}
+
+
+
+/* Dark mode adjustments for space theme */
+.dark .bg-gradient-to-br.from-gray-800\/80 {
+    background: linear-gradient(to bottom right, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.9)) !important;
+}
+
+.dark .border-gray-700\/50 {
+    border-color: rgba(55, 65, 81, 0.5) !important;
+}
+
+.dark .hover\:border-cyan-500\/50:hover {
+    border-color: rgba(6, 182, 212, 0.5) !important;
+}
+
+.dark .hover\:border-purple-500\/50:hover {
+    border-color: rgba(147, 51, 234, 0.5) !important;
+}
+
+.dark .hover\:border-orange-500\/50:hover {
+    border-color: rgba(249, 115, 22, 0.5) !important;
+}
+
 /* Mobile Optimizations */
 @media (max-width: 768px) {
     .section-padding {
@@ -291,27 +377,5 @@ body {
         font-size: 3rem;
     }
     
-    .contact-grid {
-        gap: 2rem;
-    }
-    
-    .contact-form {
-        padding: 1.5rem;
-    }
-    
-    .skill-card {
-        padding: 1.5rem;
-    }
-    
-    .project-card {
-        margin-bottom: 1.5rem;
-    }
-    
-    .about-grid {
-        gap: 3rem;
-    }
-    
-    .nav-padding {
-        padding: 1rem 0;
-    }
+
 }
