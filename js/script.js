@@ -148,3 +148,14 @@ themeToggle.addEventListener('change', () => {
         localStorage.setItem('theme', 'light');
     }
 });
+
+// CV Download function
+function downloadCV() {
+    // You can replace 'resume.pdf' with your actual CV file path
+    const link = document.createElement('a');
+    link.href = 'assets/Farjan_Ahmmed_CV.pdf'; // Update this path to your CV file
+    link.download = 'Farjan_Ahmmed_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}

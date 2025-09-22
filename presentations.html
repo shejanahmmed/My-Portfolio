@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Presentations - Farjan Ahmmed (Shejan)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-gray-900">
+    <nav class="fixed top-0 w-full bg-white/80 nav-blur z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6">
+                <div class="text-2xl font-bold text-gray-900">
+                    <a href="index.html">Farjan Ahmmed</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="index.html#home" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Home</a>
+                    <a href="index.html#about" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">About</a>
+                    <a href="index.html#skills" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Skills</a>
+                    <a href="index.html#projects" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Projects</a>
+                    <a href="presentations.html" class="text-gray-900 font-medium">Presentations</a>
+                    <a href="index.html#contact" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Contact</a>
+                    <div class="ml-4 theme-switch">
+                        <input type="checkbox" id="theme-toggle" class="theme-switch-checkbox">
+                        <label for="theme-toggle" class="theme-switch-label">
+                            <span class="theme-switch-inner"></span>
+                            <span class="theme-switch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600 p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform md:hidden">
+        <div class="flex flex-col items-center justify-center h-full space-y-8 text-xl">
+            <a href="index.html#home" class="text-gray-600 hover:text-gray-900 mobile-link font-medium">Home</a>
+            <a href="index.html#about" class="text-gray-600 hover:text-gray-900 mobile-link font-medium">About</a>
+            <a href="index.html#skills" class="text-gray-600 hover:text-gray-900 mobile-link font-medium">Skills</a>
+            <a href="index.html#projects" class="text-gray-600 hover:text-gray-900 mobile-link font-medium">Projects</a>
+            <a href="presentations.html" class="text-gray-900 mobile-link font-medium">Presentations</a>
+            <a href="index.html#contact" class="text-gray-600 hover:text-gray-900 mobile-link font-medium">Contact</a>
+        </div>
+    </div>
+
+    <section class="hero-gradient min-h-screen flex items-center justify-center pt-32">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <div class="fade-in">
+                <div class="mb-12">
+                    <div class="w-32 h-32 mx-auto mb-8 bg-white rounded-full shadow-xl flex items-center justify-center animate-bounce-slow">
+                        <span class="text-7xl animate-pulse">📊</span>
+                    </div>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight slide-up">
+                    University <span class="text-gradient">Presentations</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-gray-600 font-light leading-relaxed slide-up-delay">
+                    A collection of my academic presentations from Daffodil International University.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+                    My <span class="text-gradient">Presentations</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Academic presentations covering various topics in Software Engineering, AI/ML, and technology research.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 shadow-xl card-hover fade-in group">
+                    <div class="text-6xl mb-6 text-center transform group-hover:scale-110 transition-transform duration-300">🤖</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI & Machine Learning</h3>
+                    <p class="text-gray-600 mb-6">Introduction to AI and ML concepts.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-500 text-sm">Semester 6 • 2024</span>
+                        <button class="bg-gray-900 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-800 transition-all transform hover:scale-105">View Slides</button>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 shadow-xl card-hover fade-in group" style="animation-delay: 0.1s">
+                    <div class="text-6xl mb-6 text-center transform group-hover:scale-110 transition-transform duration-300">💻</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Software Engineering</h3>
+                    <p class="text-gray-600 mb-6">Core principles and design patterns.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-500 text-sm">Semester 5 • 2024</span>
+                        <button class="bg-gray-900 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-800 transition-all transform hover:scale-105">View Slides</button>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 shadow-xl card-hover fade-in group" style="animation-delay: 0.2s">
+                    <div class="text-6xl mb-6 text-center transform group-hover:scale-110 transition-transform duration-300">🔒</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Cybersecurity</h3>
+                    <p class="text-gray-600 mb-6">Security concepts and threat analysis.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-500 text-sm">Semester 4 • 2023</span>
+                        <button class="bg-gray-900 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-800 transition-all transform hover:scale-105">View Slides</button>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 shadow-xl card-hover fade-in group" style="animation-delay: 0.3s">
+                    <div class="text-6xl mb-6 text-center transform group-hover:scale-110 transition-transform duration-300">📱</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Mobile App Development</h3>
+                    <p class="text-gray-600 mb-6">Modern mobile development frameworks and UX design.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-500 text-sm">Semester 5 • 2024</span>
+                        <button class="bg-gray-900 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-800 transition-all transform hover:scale-105">View Slides</button>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 shadow-xl card-hover fade-in group" style="animation-delay: 0.4s">
+                    <div class="text-6xl mb-6 text-center transform group-hover:scale-110 transition-transform duration-300">🌐</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Web Technologies</h3>
+                    <p class="text-gray-600 mb-6">Modern web frameworks and responsive design.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-500 text-sm">Semester 3 • 2023</span>
+                        <button class="bg-gray-900 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-800 transition-all transform hover:scale-105">View Slides</button>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 shadow-xl card-hover fade-in group" style="animation-delay: 0.5s">
+                    <div class="text-6xl mb-6 text-center transform group-hover:scale-110 transition-transform duration-300">📊</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Data Structures & Algorithms</h3>
+                    <p class="text-gray-600 mb-6">Fundamental DSA and optimization techniques.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-500 text-sm">Semester 2 • 2023</span>
+                        <button class="bg-gray-900 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-800 transition-all transform hover:scale-105">View Slides</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16 fade-in">
+                <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-black rounded-3xl p-12 text-white transform hover:scale-105 transition-all duration-300">
+                    <h3 class="text-3xl font-bold mb-4">Want to Collaborate?</h3>
+                    <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                        Interested in discussing any of these topics or collaborating on research projects? Let's connect!
+                    </p>
+                    <a href="index.html#contact" class="bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 inline-block">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes bounceGentle {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .slide-up {
+            animation: slideUp 1s ease-out;
+        }
+        
+        .slide-up-delay {
+            animation: slideUp 1s ease-out 0.3s both;
+        }
+        
+        .animate-bounce-slow {
+            animation: bounceGentle 3s infinite;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+    </style>
+    
+    <script>
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('translate-x-full');
+            });
+            
+            // Close mobile menu when clicking links
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('translate-x-full');
+                });
+            });
+        }
+        
+        // Dark mode toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            if (currentTheme === 'dark') {
+                document.documentElement.classList.add('dark');
+                themeToggle.checked = true;
+            }
+            
+            themeToggle.addEventListener('change', () => {
+                if (themeToggle.checked) {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
