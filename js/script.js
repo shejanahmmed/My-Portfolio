@@ -131,22 +131,38 @@ window.addEventListener('scroll', () => {
 
 // Dark mode toggle
 const themeToggle = document.getElementById('theme-toggle');
+const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
 
 // Check for saved theme preference or default to light mode
 const currentTheme = localStorage.getItem('theme') || 'light';
 if (currentTheme === 'dark') {
     document.documentElement.classList.add('dark');
     themeToggle.checked = true;
+    mobileThemeToggle.checked = true;
 }
 
-themeToggle.addEventListener('change', () => {
-    if (themeToggle.checked) {
+// Function to toggle theme
+function toggleTheme(isDark) {
+    if (isDark) {
         document.documentElement.classList.add('dark');
         localStorage.setItem('theme', 'dark');
     } else {
         document.documentElement.classList.remove('dark');
         localStorage.setItem('theme', 'light');
     }
+    // Sync both toggles
+    themeToggle.checked = isDark;
+    mobileThemeToggle.checked = isDark;
+}
+
+// Desktop theme toggle
+themeToggle.addEventListener('change', () => {
+    toggleTheme(themeToggle.checked);
+});
+
+// Mobile theme toggle
+mobileThemeToggle.addEventListener('change', () => {
+    toggleTheme(mobileThemeToggle.checked);
 });
 
 // CV Download function

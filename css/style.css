@@ -245,6 +245,18 @@ body {
     51%, 100% { border-color: #667eea; } 
 }
 
+.profile-glow {
+    position: relative;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #667eea, #764ba2) border-box;
+}
+
+.profile-glow:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 30px rgba(102, 126, 234, 0.5);
+    transform: scale(1.05);
+}
+
 .fade-in { 
     opacity: 0; 
     transform: translateY(30px); 
